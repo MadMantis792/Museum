@@ -21,11 +21,15 @@ public class PlayerInteract : MonoBehaviour
                 if (interactible != null)
                 {
                     interactible.OnInteraction();
+                    //här försökte jag se om jag kunde få texten att stänga av sig själv efter 10 sekunder
+                    
                 }
                 else
                 {
                     Debug.Log("Not interactible!");
                 }
+
+                Debug.Log(hitInfo.transform.gameObject.name);
             }
         }
     }
