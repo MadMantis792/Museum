@@ -11,7 +11,7 @@ public class Interactible : MonoBehaviour
     {
         textPanel.SetActive(true);
         imagePanel.SetActive(true);
-        Invoke(nameof(OffInteraction), 10);
+        //Invoke(nameof(OffInteraction), 10);
     }
     //här har jag lagt till en till funktion som ska stänga av texten
     public void OffInteraction()
