@@ -11,7 +11,7 @@ public class CameraMove : MonoBehaviour
 
     bool lockedCursor = true;
 
-    void start()
+    void Start()
     {
 
         Cursor.visible = false;
@@ -19,7 +19,7 @@ public class CameraMove : MonoBehaviour
 
     }
 
-    void update()
+    void Update()
     {
 
         float inputX = Input.GetAxis("Mouse X")*mouseSensitivity;

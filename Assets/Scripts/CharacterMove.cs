@@ -38,9 +38,9 @@ public class CharacterMove : MonoBehaviour
 
         body.MovePosition(movement);
 
-        if (direction != Vector3.zero)
-        {
-            transform.rotation = Quaternion.LookRotation(direction);
-        }
+//        if (direction != Vector3.zero)
+//        {
+//            transform.rotation = Quaternion.LookRotation(direction);
+//        }
     }
 }
