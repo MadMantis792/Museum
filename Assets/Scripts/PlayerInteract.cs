@@ -15,6 +15,7 @@ public class PlayerInteract : MonoBehaviour
             if (hit)
             {
                 Interactible interactible;
+                SceneManager sceneManager;
 
                 hitInfo.transform.TryGetComponent<Interactible>(out interactible);
 
@@ -27,6 +28,21 @@ public class PlayerInteract : MonoBehaviour
                 else
                 {
                     Debug.Log("Not interactible!");
+                }
+
+                Debug.Log(hitInfo.transform.gameObject.name);
+
+                hitInfo.transform.TryGetComponent<SceneManager>(out sceneManager);
+
+                if (sceneManager != null)
+                {
+                    sceneManager.PreviousScene();
+                   
+
+                }
+                else
+                {
+                    Debug.Log("Not the door!");
                 }
 
                 Debug.Log(hitInfo.transform.gameObject.name);

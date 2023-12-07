@@ -10,4 +10,15 @@ public class SceneManager : MonoBehaviour
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("MainScene");
     }
+    public void PreviousScene()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("StartScreen");
+        Cursor.lockState = CursorLockMode.None;
+    }
+
+    public void ExitGame()
+    {
+        Debug.Log("Qutting!");
+        Application.Quit();
+    }
 }
